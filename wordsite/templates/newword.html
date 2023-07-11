@@ -1,0 +1,69 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    {% comment %} <link rel='stylesheet' href='newword.css'> {% endcomment %}
+    <link rel='stylesheet' href='{% static 'css/newword.css' %}'>
+    <title>Converter</title>
+</head>
+<style>
+
+</style>
+<body>
+    <nav>
+        <ul>
+            <!-- <li><a  href="/home">Home</a></li> -->
+            <li><a  href="/mix_game">Mix Game</a></li>
+            <li><a  href="/text_game">Text game</a></li>
+            <li><a class="active" href="/newword">Add word</a></li>
+        </ul>
+    </nav>
+    <div id ="container" class = "center shadow">
+        <div id ="info-box">
+            <p id = "info"></p>
+        </div>
+
+        <form id = "word-form">
+            <label for="new-word">New word:</label><br>
+            <div id = "input-minibox">
+                <input type="text" id="new-word" name="word">
+                <button type = "submit" id="btn" class = "btn-mini">Check definition</button>
+            </div>
+            <button type = "submit" id="btn-check" class= "hideme">Check word</button>
+            
+        </form>
+
+        <div id ="definitions-box">
+
+        <form id = "definitions-form">
+            <label for="definitions">Definition:</label><br>
+            <select name="definitions-item" id="definitions">
+                <option id = "temp-def">No info...</option>
+            </select><br>
+        </form>
+
+        
+            <!-- <label for="definition">Definition</label> -->
+            <textarea id="definition" name="w3review" rows="4" cols="50" maxlength="212">Input definition of the word or press Check definition button.
+            </textarea>
+        </div>
+
+        <div id = "buttons-box">
+            <button id = "btn-1" class ="btn">Add Word</button>
+            <button id = "btn-2" class ="btn hideme">Start</button>
+         
+        </div>
+
+        
+    </div>
+
+    
+   
+    {% comment %} <script src="newword.js"> </script> {% endcomment %}
+    <script src="{% static 'js/newword.js' %}"> </script>
+</body>
+</html>

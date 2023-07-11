@@ -1,0 +1,67 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    {% comment %} <link  rel="stylesheet" href='mix_game.css'> {% endcomment %}
+    <link rel='stylesheet' href='{% static 'css/mix_game.css' %}'>
+    <title>Mix</title>
+</head>
+<style>
+ 
+</style>
+<body>
+    <nav>
+        <ul>
+            <!-- <li><a  href="home.html">Home</a></li> -->
+            <li><a class="active" href="/mix_game">Mix Game</a></li>
+            <li><a href="/text_game">Text game</a></li>
+            <li><a href="/newword">Add word</a></li>
+        </ul>
+    </nav>
+
+    <div id ="container" class = "center shadow">
+
+        <div id ="info-box">
+            <div id ="top-btn-left"></div>
+            <p id = "info">Mix Game</p>
+            <div id ="top-btn-right"></div>
+        </div>
+
+        <div id ="result-box">
+            <p id = "text"></p>
+        </div>
+
+        <div id = "word"> 
+            <div id = "word-letter-id" class = "letter open hideme"><p class = "">A<p></div>
+            <div id = "word-letter-id" class = "letter close hideme"><p class = "hideme">A<p></div>
+        </div>
+        <div id = "mix-word">
+            <div id = "mix-word-letter-id" class = "letter unused hideme"><p>A<p></div>
+            <div id = "mix-word-letter-id" class = "letter used hideme"><p>A<p></div>
+        </div>
+        
+        <div id = "buttons-box">
+            <button id = "btn-1" class ="btn hideme">Next</button>
+            <button id = "btn-2" class ="btn">Start</button>
+            <button id = "btn-3" class ="btn hideme">Help</button>
+        </div>
+
+        
+
+      
+       
+    </div>
+    <template id="template">
+       <div id = "" class = "letter"><p class = "internal-letter">A<p></div>
+    </template>
+
+    
+    
+    {% comment %} <script src="mix_script.js"> </script> {% endcomment %}
+    <script src="{% static 'js/mix_script.js' %}"> </script>
+</body>
+</html>
