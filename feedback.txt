@@ -1,0 +1,21 @@
+Hi Dmitry,
+
+Here's a rundown of the feedback for your Django project:
+
+- I was thoroughly impressed with your project structure and file organization. It's easy to navigate through your files, and the structure is clear and logical. Keep up this great work as it makes maintenance and comprehension of your project a lot easier.
+
+- When it comes to code readability and formatting, there's some room for improvement. Even though the code is quite comprehensible, ensure you're consistently adhering to PEP 8 standards for optimal readability. 
+
+- Your knowledge and application of Django and the Django REST Framework is evident. You've really managed to harness the potential of these frameworks, which shows your clear understanding of their capabilities. 
+
+- The database modelling in your project is executed effectively. Your models and relationships are defined logically and correctly, which forms a strong foundation for your application.
+
+- Your approach to views and URL design is logical and clear. This makes for an intuitive flow within your project.
+
+- Error handling and validation in your project is done quite well, but you may want to review and cater for some missed edge cases. Remember, the more comprehensive your error handling is, the more robust your application becomes.
+
+- The main area that needs significant attention is your documentation. It's essential for both yourself in future revisions and for others who might work on your project. Remember to include all aspects of your project, including setup and usage instructions.
+
+Keep pushing forward, Dmitry. Your coding skills are noteworthy, and with a little bit more focus on areas like code formatting and documentation, you're well on your way to mastering this. Happy coding!
+
+Yossi
